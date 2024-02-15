@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Appointment</title>
+</head>
+<body>
+    <h1>Delete Appointment</h1>
+    <p>Are you sure you want to delete this appointment?</p>
+    <form action="/delete/{{ appointment[0] }}" method="post">
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>

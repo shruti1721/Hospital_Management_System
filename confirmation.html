@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Confirmation</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .confirmation-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 80%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        h2 {
+            color: #2980b9;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Appointment Confirmation</h1>
+        <div>
+            <h2>Your Appointment Details:</h2>
+            <p><strong>Token Number:</strong> {{ appointment_details[0] }}</p>
+            <p><strong>Name:</strong> {{ appointment_details[1] }}</p>
+            <p><strong>Email:</strong> {{ appointment_details[2] }}</p>
+            <p><strong>Phone:</strong> {{ appointment_details[3] }}</p>
+            <p><strong>Address:</strong> {{ appointment_details[4] }}</p>
+            <p><strong>Department:</strong> {{ appointment_details[5] }}</p>
+            <p><strong>Date and Time:</strong> {{ appointment_details[6] }}</p>
+            <p><strong>Reason for Appointment:</strong> {{ appointment_details[7] }}</p>
+            <p><strong>Comments:</strong> {{ appointment_details[8] }}</p>
+    </div>
+</body>
+</html>
